@@ -1,21 +1,21 @@
 ---
-import Button from "../components/Button";
-import Cv from "../components/icons/Cv.astro";
-import Github from "../components/icons/Github";
-import Linkedin from "../components/icons/Linkedin.astro";
-import Mail from "../components/icons/Mail.astro";
-import Navbar from "../components/Navbar";
-import ProjectCard from "../components/ProjectCard";
-import TagWrapper from "../components/TagWrapper";
-import Timeline from "../components/Timeline";
-import Layout from "../layouts/Layout.astro";
+import Button from "../../components/Button";
+import Cv from "../../components/icons/Cv.astro";
+import Github from "../../components/icons/Github";
+import Linkedin from "../../components/icons/Linkedin.astro";
+import Mail from "../../components/icons/Mail.astro";
+import Navbar from "../../components/Navbar";
+import ProjectCard from "../../components/ProjectCard";
+import TagWrapper from "../../components/TagWrapper";
+import Timeline from "../../components/Timeline";
+import Layout from "../../layouts/Layout.astro";
 
-import { projects } from "../data/projects";
+import { projects } from "../../data/projects";
 
-import * as m from "../paraglide/messages.js";
+import * as m from "../../paraglide/messages.js";
 ---
 
-<Layout title={m.pageTitle()}>
+<Layout title="Franco Murabito's Portfolio">
   <header class="container">
     <Navbar client:load />
   </header>
@@ -73,7 +73,7 @@ import * as m from "../paraglide/messages.js";
       <Timeline client:load />
       <img
         src="/wave-2.svg"
-        class="absolute rotate-180 lg:bottom-[20%] left-0 w-full -z-50 opacity-50 brightness-105 bottom-[44%]"
+        class="absolute rotate-180 lg:bottom-[15%] left-0 w-full -z-50 opacity-50 brightness-105 bottom-[44%]"
         aria-hidden="true"
       />
     </section>

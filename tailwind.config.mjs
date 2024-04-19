@@ -2,6 +2,10 @@
 export default {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
+		fontFamily: {
+			'sans': ['Nunito', 'system-ui', 'sans-serif'],
+			'mono': ['Ubuntu Mono', 'monospace'],
+		},
 		extend: {
 			container: {
 				center: true,
@@ -11,5 +15,5 @@ export default {
 			}
 		},
 	},
-	plugins: [],
+	plugins: [require('tailwindcss-animated')],
 }
