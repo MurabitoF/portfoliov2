@@ -12,8 +12,17 @@ export default {
 				screens: {
 					"2xl": "1440px",
 				}
-			}
+			},
+			typography: (theme) => ({
+				DEFAULT: {
+					css: {
+						color: theme('colors.neutral.200'),
+						'--tw-prose-headings': theme('colors.neutral.100'),
+						'--tw-prose-bold': theme('colors.neutral.100'),
+					}
+				}
+			})
 		},
 	},
-	plugins: [require('tailwindcss-animated')],
+	plugins: [require('tailwindcss-animated'), require('@tailwindcss/typography')],
 }
