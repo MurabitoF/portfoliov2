@@ -15,7 +15,8 @@ export const experiences: Experience[] = [
     title: "Full Stack Developer",
     shortDescription: m.experience1ShortDesc(),
     fullDescription: m.experience1FullDesc(),
-    dateStar: "04/07/2024",
+    dateStar: "01/11/2022",
+    dateEnd: "23/07/2024",
   },
   {
     id: 2,
